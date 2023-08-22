@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>مبيعات الغاز</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <h2>مبيعات الغاز</h2>
+
+    <!-- <div>
+        <label for="dropdown1">المحافظة</label>
+        <select id="dropdown1" onchange="showDropdown2()">
+
+                <option value="0">المحافظات</option>
+                <option value="1">القاهرة</option>
+                <option value="2">الجيزة</option>
+                <option value="3">الأسكندرية</option>
+                <option value="4">الدقهلية</option>
+                <option value="5">الشرقية</option>
+                <option value="6">المنوفية</option>
+                <option value="7">القليوبية</option>
+                <option value="8">البحيرة</option>
+                <option value="9">الغربية</option>
+                <option value="10">بور سعيد</option>
+                <option value="11">دمياط</option>
+                <option value="12">الإسماعلية</option>
+                <option value="13">السويس</option>
+                <option value="14">كفر الشيخ</option>
+                <option value="15">الفيوم</option>
+                <option value="16">بني سويف</option>
+                <option value="17">مطروح</option>
+                <option value="18">شمال سيناء</option>
+                <option value="19">جنوب سيناء</option>
+                <option value="20">المنيا</option>
+                <option value="21">أسيوط</option>
+                <option value="22">سوهاج</option>
+                <option value="23">قنا</option>
+                <option value="24">البحر الأحمر</option>
+                <option value="25">الأقصر</option>
+                <option value="26">أسوان</option>
+                <option value="27">الواحات</option>
+                <option value="28">الوادي الجديد</option>
+
+            </select>
+    </div>
+
+    <div id="dropdown2Container" style="display: none;">
+        <label for="dropdown2">المحطات</label>
+        <select id="dropdown2">
+            <option value="">اختار المحطة</option>
+            <option value="option4">Option 4</option>
+            <option value="option5">Option 5</option>
+            <option value="option6">Option 6</option>
+        </select>
+    </div> -->
+
+    <div class="revise">
+
+        <div style="direction: rtl;">
+            <div class="second">
+                <label for="dropdown1" style="display: flex; direction: rtl;  font-size: 20px; font-weight: bold;">اختار
+                    المحافظة</label>
+
+
+                <select id="dropdown1" onchange="showDropdown2()">
+                    <option value="0">المحافظة</option>
+                    <option value="1">القاهرة</option>
+                    <option value="2">الجيزة</option>
+                    <option value="3">الأسكندرية</option>
+                    <option value="4">الدقهلية</option>
+                    <option value="5">الشرقية</option>
+                    <option value="6">المنوفية</option>
+                    <option value="7">القليوبية</option>
+                    <option value="8">البحيرة</option>
+                    <option value="9">الغربية</option>
+                    <option value="10">بور سعيد</option>
+                    <option value="11">دمياط</option>
+                    <option value="12">الإسماعلية</option>
+                    <option value="13">السويس</option>
+                    <option value="14">كفر الشيخ</option>
+                    <option value="15">الفيوم</option>
+                    <option value="16">بني سويف</option>
+                    <option value="17">مطروح</option>
+                    <option value="18">شمال سيناء</option>
+                    <option value="19">جنوب سيناء</option>
+                    <option value="20">المنيا</option>
+                    <option value="21">أسيوط</option>
+                    <option value="22">سوهاج</option>
+                    <option value="23">قنا</option>
+                    <option value="24">البحر الأحمر</option>
+                    <option value="25">الأقصر</option>
+                    <option value="26">أسوان</option>
+                    <option value="27">الواحات</option>
+                    <option value="28">الوادي الجديد</option>
+
+                </select>
+
+
+                <div id="dropdown2Container" style="display: none; ">
+                    <label for="dropdown2"
+                        style="display: flex; direction: rtl; font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+
+                    <select id="dropdown2">
+                        <option value="0">المحطة</option>
+                        <option value="1">ألماظة </option>
+                        <option value="2">الكابلات</option>
+                        <option value="3">التجمع الخامس </option>
+                        <option value="4">جاردينيا </option>
+                        <option value="5">الفردوس </option>
+                        <option value="6">الرحاب</option>
+                        <option value="7">محور المشير</option>
+                        <option value="8">جسر السويس</option>
+                        <option value="9">زهراء مدينة نصر</option>
+                        <option value="10">حديقة بدر</option>
+                        <option value="11">المطار</option>
+                        <option value="12">الجبل الأحمر</option>
+                        <option value="13">الشروق</option>
+                        <option value="14">شبرا </option>
+                        <option value="15">الاستاد</option>
+                        <option value="16">المعادي/اللاسلكى</option>
+                        <option value="17">الواحة</option>
+                        <option value="18">وادي حوف</option>
+                        <option value="19">النزهة الجديدة</option>
+                        <option value="20">عين شمس </option>
+                        <option value="21">اسو سافوي</option>
+                        <option value="22">النهضة</option>
+                        <option value="23">اسو القطامية</option>
+                        <option value="24">الحلمية </option>
+                        <option value="25">بدر الصناعية</option>
+                        <option value="26">موبيل عين شمس</option>
+                        <option value="27">الخليج</option>
+                        <option value="28">المعصرة - كورنيش النيل</option>
+                        <option value="29">جراج مجلس الوزراء </option>
+                        <option value="30">مدينة نصر</option>
+                        <option value="31">شبرد</option>
+                        <option value="32">رمسيس </option>
+                        <option value="33">المرج </option>
+                        <option value="34">المطرية</option>
+                        <option value="35">جراج شركة اتوبيس القاهرة</option>
+                        <option value="36">السواح</option>
+                        <option value="37">البساتين </option>
+                        <option value="38">المقطم</option>
+                        <option value="39">بدر الروبيكي</option>
+                        <option value="40">التبين</option>
+                        <option value="41">الخلفاوى</option>
+                        <option value="42">رشدى - القاهرة</option>
+
+                    </select>
+
+                </div>
+                <div id="dropdown2Container1" style="display: none;">
+
+                    <label for="dropdown20"
+                        style="display: flex; direction: rtl;  font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+                    <select id="dropdown22">
+                        <option value="0">المحطة</option>
+                        <option value="1">الشيخ زايد </option>
+                        <option value="2">الدولفين </option>
+                        <option value="3">مصدق </option>
+                        <option value="4">حدائق اكتوبر </option>
+                        <option value="5">الياسمين</option>
+                        <option value="6">سفنكس</option>
+                        <option value="7">الوراق - أمبابة</option>
+                        <option value="8">أبو رواش</option>
+                        <option value="9">الهرم </option>
+                        <option value="10">العمرانية </option>
+                        <option value="11">فيصل</option>
+                        <option value="12">بوابة رسوم الصحراوي </option>
+                        <option value="13">النجدة 6 اكتوبر </option>
+                        <option value="14">البدرشين الجديدة</option>
+                        <option value="15">المتانيا</option>
+                        <option value="16">الدقى - المتحف</option>
+                        <option value="17">كرداسه</option>
+                        <option value="18">البراجيل الجديدة</option>
+                        <option value="19">البراجيل القديمة</option>
+                        <option value="20">الحوامدية</option>
+                        <option value="21">أوسيم - كساب والصعيدى</option>
+                        <option value="22">الودي</option>
+                        <option value="23">أوتوستراد الصف</option>
+                        <option value="24">مساكن ابو بكر الصديق</option>
+                        <option value="25">طريق عزبة السلام</option>
+                        <option value="26">وراق العرب</option>
+                    </select>
+
+                </div>
+                <div id="dropdown2Container2" style="display: none;">
+
+                    <label for="dropdown2"
+                        style="display: flex; direction: rtl;  font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+                    <select id="dropdown2">
+                        <option value="0">المحطة</option>
+                        <option value="1">ابو تلات</option>
+                        <option value="2">غيط العنب</option>
+                        <option value="3">رشدى - الاسكندرية</option>
+                        <option value="4"> العجمي</option>
+                        <option value="5">جميلة بو حريد </option>
+                        <option value="6">القبارى</option>
+                        <option value="7">السيوف</option>
+                        <option value="8">المكس</option>
+                        <option value="9">ترعة المحمودية</option>
+                        <option value="10">الطابية</option>
+                        <option value="11">ام زغـــيو</option>
+                        <option value="12">سموحة </option>
+                        <option value="13">سيدى بشر </option>
+                        <option value="14">سيدى بشر اتوبيسات</option>
+                        <option value="15">العجمى - اتوبيسات </option>
+                        <option value="16">محرم بك - أتوبيسات </option>
+                        <option value="17">كينج مريوط</option>
+
+
+                    </select>
+
+                </div>
+                <div id="dropdown2Container3" style="display: none;">
+
+                    <label for="dropdown2"
+                        style="display: flex; direction: rtl; font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+                    <select id="dropdown2">
+                        <option value="0">المحطة</option>
+                        <option value="1">المنصورة/سندوب</option>
+                        <option value="2"> المنصورة/النخلة</option>
+                        <option value="3"> المنصورة/الدراسات</option>
+                        <option value="4"> الطويلة</option>
+                        <option value="5"> ميت غمر </option>
+                        <option value="6">شربين القديمة</option>
+                        <option value="7">اجا</option>
+                        <option value="8">العلاوية</option>
+                        <option value="9">المنصورة/الثلاجة</option>
+                    </select>
+
+                </div>
+                <div id="dropdown2Container4" style="display: none;">
+
+                    <label for="dropdown2"
+                        style="display: flex; direction: rtl; font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+                    <select id="dropdown2">
+                        <option value="0">المحطة</option>
+                        <option value="1">الزقازيق/المرور</option>
+                        <option value="2">العاشر من رمضان </option>
+                        <option value="3">العاشر A1</option>
+                        <option value="4">الزاهد</option>
+                        <option value="5"> الزقازيق/الجلاء</option>
+                        <option value="6">الزقازيق/النقراشى</option>
+                        <option value="7">أكراش</option>
+                        <option value="8">جهينة القبليه </option>
+                        <option value="9">فاقوس السكة </option>
+                        <option value="10">منيا القمح الجديدة</option>
+                        <option value="11">أشكر</option>
+                        <option value="12">الزقازيق/الشيمى</option>
+                        <option value="13">صبيح</option>
+                        <option value="14">كفر صقر</option>
+                        <option value="15">عزبة مختار</option>
+                        <option value="16">الصالحية الجديدة</option>
+                        <option value="17">ههيا الجديدة </option>
+                        <option value="18">الحلمية/الشرقية</option>
+                        <option value="19">القرين</option>
+                    </select>
+                </div>
+                <div id="dropdown2Container5" style="display: none;">
+
+                    <label for="dropdown2"
+                        style="display: flex; direction: rtl; font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+                    <select id="dropdown2">
+                        <option value="0">المحطة</option>
+                        <option value="1">السادات الجامعة</option>
+                        <option value="2">شبين الكوم</option>
+                        <option value="3">قويسنا/المستشفى العام</option>
+                        <option value="4">الباجور</option>
+                        <option value="5">الشهداء القديمة</option>
+                        <option value="6">الشهداء الجديدة</option>
+                        <option value="7">سرس الليان/صابر </option>
+                        <option value="8">قويسنا الزراعة الألية</option>
+                        <option value="9">شبين الكوم/ التقوى</option>
+                        <option value="10">تلا أبو قورة</option>
+                        <option value="11">أشمون/ حمزة كشك</option>
+                        <option value="12">منوف</option>
+                        <option value="13">النور الحديثة</option>
+                        <option value="14">قويسنا/مزروع</option>
+                        <option value="15">سبك الضحاك</option>
+                        <option value="16">طليا</option>
+                        <option value="17">تلا المستودع</option>
+                        <option value="18">ميت بره</option>
+                        <option value="19">سرس الليان/شرشر</option>
+                        <option value="20">السادات الجديدة</option>
+                        <option value="21">شما</option>
+                        <option value="22">زاوية جراوان</option>
+                    </select>
+                </div>
+
+                <div id="dropdown2Container6" style="display: none;">
+
+                    <label for="dropdown2"
+                        style="display: flex; direction: rtl; font-size: 20px; font-weight: bold;">اختار
+                        المحطة</label>
+
+                    <select id="dropdown2">
+                        <option value="0">المحطة</option>
+                        <option value="1">الخانكة </option>
+                        <option value="2">العبور/المنطقة الصناعية</option>
+                        <option value="3">بنها</option>
+                        <option value="4">كفر الجزار</option>
+                        <option value="5">قليوب</option>
+                        <option value="6">كفر شكر</option>
+                        <option value="7">طوخ</option>
+                        <option value="8">النادى الرياضى بنها</option>
+                        <option value="9">كفر شبين</option>
+                        <option value="10">كفر بطا</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div>
+        <label for="dateInput">التاريخ</label>
+        <input type="date" id="dateInput">
+
+    </div>
+        <div style="display: flex; ">
+            <p>اعطال</p>
+            <label for="radioInput">يوجد</label>
+            <input type="radio" id="radio" name="radioGroup">
+            <label for="radioInput">لا يوجد</label>
+            <input type="radio" id="radio" name="radioGroup">
+
+      
+    </div> -->
+    <div class="midd">
+        <div class="all">
+            <label for="date">التاريخ</label>
+            <input id="dateInput" type="date">
+        </div>
+        <div class=" all">
+            <label for="date">مبيعات الغاز</label>
+            <input id="gas-sales" type="number">
+            <label for="date"> متر مكعب</label>
+
+        </div>
+        <div class=" all">
+            <label for="dis">اعطال</label>
+            <label for="radioInput">يوجد</label>
+            <input type="radio" id="radio" name="radioGroup">
+            <label for="radioInput">لا يوجد</label>
+            <input type="radio" id="radio" name="radioGroup">
+        </div>
+    </div>
+
+    <div class="ss">
+        <label for="textInput">الملاحظات</label>
+        <textarea type="text" id="textInput"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit" class="btn btn-primary"> حفط البيانات</button>
+    </div>
+
+    <script>
+        function showDropdown2() {
+            var dropdown1 = document.getElementById("dropdown1");
+            var dropdown2Container = document.getElementById("dropdown2Container");
+
+            if (dropdown1.value == "1") {
+                dropdown2Container.style.display = "block";
+            } else {
+                dropdown2Container.style.display = "none";
+            }
+
+            if (dropdown1.value == "2") {
+                dropdown2Container1.style.display = "block";
+            } else {
+                dropdown2Container1.style.display = "none";
+            }
+            if (dropdown1.value == "3") {
+                dropdown2Container2.style.display = "block";
+            } else {
+                dropdown2Container2.style.display = "none";
+            }
+            if (dropdown1.value == "4") {
+                dropdown2Container3.style.display = "block";
+            } else {
+                dropdown2Container3.style.display = "none";
+            }
+            if (dropdown1.value == "5") {
+                dropdown2Container4.style.display = "block";
+            } else {
+                dropdown2Container4.style.display = "none";
+            }
+            if (dropdown1.value == "6") {
+                dropdown2Container5.style.display = "block";
+            } else {
+                dropdown2Container5.style.display = "none";
+            }
+            if (dropdown1.value == "7") {
+                dropdown2Container6.style.display = "block";
+            } else {
+                dropdown2Container6.style.display = "none";
+            }
+            if (dropdown1.value == "8") {
+                dropdown2Container7.style.display = "block";
+            } else {
+                dropdown2Container7.style.display = "none";
+            }
+            if (dropdown1.value == "9") {
+                dropdown2Container8.style.display = "block";
+            } else {
+                dropdown2Container8.style.display = "none";
+            }
+            if (dropdown1.value == "10") {
+                dropdown2Container9.style.display = "block";
+            } else {
+                dropdown2Container9.style.display = "none";
+            }
+            if (dropdown1.value == "11") {
+                dropdown2Container10.style.display = "block";
+            } else {
+                dropdown2Container10.style.display = "none";
+            }
+            if (dropdown1.value == "12") {
+                dropdown2Container11.style.display = "block";
+            } else {
+                dropdown2Container11.style.display = "none";
+            }
+            if (dropdown1.value == "13") {
+                dropdown2Container12.style.display = "block";
+            } else {
+                dropdown2Container12.style.display = "none";
+            }
+            if (dropdown1.value == "14") {
+                dropdown2Container13.style.display = "block";
+            } else {
+                dropdown2Container13.style.display = "none";
+            }
+            if (dropdown1.value == "15") {
+                dropdown2Container14.style.display = "block";
+            } else {
+                dropdown2Container14.style.display = "none";
+            }
+            if (dropdown1.value == "16") {
+                dropdown2Container15.style.display = "block";
+            } else {
+                dropdown2Container15.style.display = "none";
+            }
+            if (dropdown1.value == "17") {
+                dropdown2Container16.style.display = "block";
+            } else {
+                dropdown2Container16.style.display = "none";
+            }
+            if (dropdown1.value == "18") {
+                dropdown2Container17.style.display = "block";
+            } else {
+                dropdown2Container17.style.display = "none";
+            }
+            if (dropdown1.value == "19") {
+                dropdown2Container18.style.display = "block";
+            } else {
+                dropdown2Container18.style.display = "none";
+            }
+            if (dropdown1.value == "20") {
+                dropdown2Container19.style.display = "block";
+            } else {
+                dropdown2Container19.style.display = "none";
+            }
+            if (dropdown1.value == "21") {
+                dropdown2Container20.style.display = "block";
+            } else {
+                dropdown2Container20.style.display = "none";
+            }
+            if (dropdown1.value == "22") {
+                dropdown2Container21.style.display = "block";
+            } else {
+                dropdown2Container21.style.display = "none";
+            }
+            if (dropdown1.value == "23") {
+                dropdown2Container22.style.display = "block";
+            } else {
+                dropdown2Container22.style.display = "none";
+            }
+            if (dropdown1.value == "24") {
+                dropdown2Container23.style.display = "block";
+            } else {
+                dropdown2Container23.style.display = "none";
+            }
+            if (dropdown1.value == "25") {
+                dropdown2Container24.style.display = "block";
+            } else {
+                dropdown2Container24.style.display = "none";
+            }
+            if (dropdown1.value == "26") {
+                dropdown2Container25.style.display = "block";
+            } else {
+                dropdown2Container25.style.display = "none";
+            }
+            if (dropdown1.value == "27") {
+                dropdown2Container26.style.display = "block";
+            } else {
+                dropdown2Container26.style.display = "none";
+            }
+            if (dropdown1.value == "28") {
+                dropdown2Container27.style.display = "block";
+            } else {
+                dropdown2Container27.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
